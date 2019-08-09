@@ -1,4 +1,5 @@
-﻿https://mohsinh.com/index.html
+﻿https://mohsinh.com
+https://mohsinh.com/index.html
 https://mohsinh.com/about.html
 https://mohsinh.com/resume.html
 https://mohsinh.com/contact.html
