@@ -33,25 +33,76 @@
 							<h2>September 2019 - Present</h2>
 							<p><strong>We're creating a bluetooth-enabled, unintrusive motor attachment that allows users to motorize their Penny boards.</strong></p>
 							<hr />
-							<h2>Overview</h2>
-								<ul>
-								<li><b>Penny boards</b> are small skateboards with a 22 inch deck and are used for cruising on flatter surfaces.
-								<li>We're designing an attachment that <b>motorizes a Penny board without damaging/replacing any original Penny parts</b>.</li>
-								<li>The attachment will be controlled using the <b>volume buttons</b> on a <b>smartphone</b>.</li>
-								</ul>
-							<div align="center"><img src="images/ep_boardBottom.jpg" width="70%"></div>
-							
-							<h2>The Team</h2>
-								<ul>
-									<li><b>Mohsin Haider</b> (myself): A novice Penny-boarder.</li>
-									<li><b>Fran Romano</b>: My friend and also an expert Penny-boarder (check him out <a href="https://franromano.com">here</a>).</li>
-									Together we're two Mechanical Engineering students looking for a fun and exciting way to apply our technical skills.
-								</ul>
-							
-							<h2>Current Progress</h2>
+							<table>
+								<tr>
+									<td width="40%">
+										<h2>The Problem</h2>
+											<p>My friend Fran and I both like to ride penny boards, but whenever we want to go to his apartment, we can't ride them up the hill leading to it, so we just end up carrying the boards.</p>
+									</td>
+									<td width="40%">
+										<h2>The Goal</h2>
+											<p><b><u>Modify our penny boards so that we can make it up the hill leading to Fran's apartment.</u></b></p>
+										
+									</td>
+								</tr>
+								<tr>
+									<td style="vertical-align:top;">
+										<h2>The Team</h2>
+										<ul>
+											<li><b>Mohsin Haider</b> (myself): A novice Penny-boarder.</li>
+											<li><b>Fran Romano</b>: My friend and also an expert Penny-boarder (check him out <a href="https://franromano.com">here</a>).</li>
+											<li>Together we're two Mechanical Engineering students looking for a fun and exciting way to apply our technical skills.</li>
+										</ul>
+									</td>
+									<td align="center">
+										<img src="images/ep_teamPhoto.jpg" width="80%">
+									</td>
+								</tr>
+								<tr style="background-color:white;">
+									<td align="center">
+										<img src="images/ep_blackPenny.JPG" width="70%">
+									</td>
+									<td style="vertical-align:top;">
+										<h2>Background</h2>
+													<ul>
+													<li><b><a href="https://www.pennyskateboards.com/">Penny boards</a></b> are small skateboards with a 22-inch flexible plastic deck.
+													<li>They are usually used for cruising on flatter surfaces.</li>
+													<li>Because they are smaller, they are often valued for their light weight and portability.</li>
+													</ul>
+									</td>
+								</tr>
+							</table>
+							<h2>The Solution</h2>
+								<p>We created a motor attachment for our penny boards that can attached and removed without permanent or irreversible modifications to the boards. The attachment connects a motor to one of the rear wheels using a sprocket that is inserted into the wheel along with a belt and a key that is attached to the motor shaft.</p>
+								<div align="center" style="padding-bottom:10px"><img src="images/ep_noAttachment.JPG" width="40%"><img src="images/ep_withAttachment.JPG" width="40%"></div>
+								<h3>Key Features</h3>
+								<p>There are some features that set our project apart from other similar products that we have seen on the market.</p>
+									<ul>
+									<li>Controlled with a smartphone's <b>volume buttons</b> using Bluetooth.</li>
+									<li>Can be attached and removed <b>without irreversible modifications</b> to the board.</li>
+									<li>Builds off of <b>existing penny board parts</b>.</li>
+									</ul>
+								<h3>How It Works</h3>
+								<h4>Electronics</h4>
+								<div align="center"><img src="images/ep_flowChart.JPG" width="80%"></div>
+								
+								<table>
+									<thead>
+										<td><b>Component:</b></td> <td><b>Smartphone</b></td>	<td><b>HC-05 Bluetooth Module</b></td> <td><b>Arduino Nano</b></td> <td><b>ESC</b></td> <td><b>DC Brushless Motor</b></td>
+									</thead>
+									<tr>
+										<td><b>Role:</b></td>
+										<td>User uses volume buttons to input their desired speed</td>
+										<td>Recieves wireless serial data from phone and feeds it into the Arduino</td> 
+										<td>Converts the serial data to microseconds, which the ESC can understand</td> 
+										<td>Turns the microseconds into a throttle curve and activates the motor</td> 
+										<td>Rotates its shaft, which rotates the wheel and moves the board</td>
+									</tr>
+								</table>
+							<h2>Latest Progress</h2>
 								<p>Our most recent progress was a successful run of the motor attachment on the skateboard using the battery as a power source and an Android phone as an input device.</p>
 								<div align="center">
-										<video width="50%" controls>
+										<video width="70%" controls>
 											<source src="images/batteryRun.mp4" type="video/mp4">
 											Your browser does not support the video tag.
 									</video>
