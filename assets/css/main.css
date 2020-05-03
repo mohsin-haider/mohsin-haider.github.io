@@ -6,7 +6,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500&family=Source+Sans+Pro&display=swap');
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -148,7 +150,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #585858;
-		font-family: Tahoma, Geneva, sans-serif;
+		/*font-family: Tahoma, Geneva, sans-serif;*/
+		font-family: 'Open Sans',sans-serif;
 		font-size: 16pt;
 		font-weight: 500;
 		line-height: 1.75;
